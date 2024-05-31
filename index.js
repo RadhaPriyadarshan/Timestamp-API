@@ -13,7 +13,7 @@ if (!fs.existsSync(folderPath)) {
 }
 
 
-app.post('/create-timestamp', (req, res) => {
+app.post('/create', (req, res) => {
     const timestamp = moment().format('YYYY-MM-DD HH:mm:ss');
     const filename = moment().format('YYYY-MM-DD_HH-mm-ss') + '.txt';
     const filePath = path.join(folderPath, filename);
@@ -27,7 +27,7 @@ app.post('/create-timestamp', (req, res) => {
 });
 
 
-app.get('/list-timestamps', (req, res) => {
+app.get('/', (req, res) => {
     fs.readdir(folderPath, (err, files) => {
         if (err) {
             return res.status(500).json({ message: 'Error reading directory', error: err });

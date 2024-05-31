@@ -21,3 +21,7 @@ This project provides a simple API to create text files with the current timesta
    ```bash
    git clone https://github.com/RadhaPriyadarshan/Timestamp-API.git
    cd Timestamp-API
+## Postman Documentation:
+- https://documenter.getpostman.com/view/22447139/2sA3QwaUsm
+## Published on Render.com:
+- https://timestamp-api-yhz9.onrender.com

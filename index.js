@@ -4,7 +4,7 @@ const path = require('path');
 const moment = require('moment');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const folderPath = path.join(__dirname, 'files');
 
 

@@ -19,5 +19,5 @@ This project provides a simple API to create text files with the current timesta
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/timestamp-api.git
-   cd timestamp-api
+   git clone https://github.com/RadhaPriyadarshan/Timestamp-API.git
+   cd Timestamp-API

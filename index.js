@@ -7,12 +7,12 @@ const app = express();
 const PORT = 3000;
 const folderPath = path.join(__dirname, 'files');
 
-// Ensure the folder exists
+
 if (!fs.existsSync(folderPath)) {
     fs.mkdirSync(folderPath);
 }
 
-// Endpoint to create a text file with the current timestamp
+
 app.post('/create-timestamp', (req, res) => {
     const timestamp = moment().format('YYYY-MM-DD HH:mm:ss');
     const filename = moment().format('YYYY-MM-DD_HH-mm-ss') + '.txt';
@@ -26,7 +26,7 @@ app.post('/create-timestamp', (req, res) => {
     });
 });
 
-// Endpoint to retrieve all text files in the folder
+
 app.get('/list-timestamps', (req, res) => {
     fs.readdir(folderPath, (err, files) => {
         if (err) {
